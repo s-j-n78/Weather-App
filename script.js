@@ -3,7 +3,7 @@
 	
 	fetchWeather: function(city){
 		
-		fetch("http://api.openweathermap.org/data/2.5/weather?q=denver&units=metric&APPID=" 
+		fetch("https://api.openweathermap.org/data/2.5/weather?q=denver&units=metric&APPID=" 
 		+ this.apiKey)
 		
 		.then((response) => response.json())
@@ -25,7 +25,7 @@ let weather = {
 	
 	fetchWeather: function(city){
 		
-		fetch("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&APPID=" + this.apiKey)
+		fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&APPID=" + this.apiKey)
 		.then((response) => response.json())
 		.then((data) => this.displayWeather(data));	
 		
